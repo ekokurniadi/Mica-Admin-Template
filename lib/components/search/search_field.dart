@@ -25,6 +25,8 @@ class SearchField extends StatelessWidget {
           suffixIcon: Padding(
             padding: const EdgeInsets.only(right: 8),
             child: SimpleButton(
+              iconColorHover: AppColors.primaryColor,
+              backgroundColorHover: AppColors.purple,
               backgroundColor: AppColors.purple100,
               svgIcon: 'assets/images/svg/ic_search_filter.svg',
               iconColor: AppColors.purple,

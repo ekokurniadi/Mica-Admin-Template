@@ -19,14 +19,19 @@ class MyApp extends StatelessWidget {
       create: (context) => SideBarController(),
       child: MaterialApp(
         builder: (context, child) {
+          double scale = 126 / MediaQuery.of(context).size.width;
           return ResponsiveWrapper.builder(
             child,
             defaultScale: true,
-            breakpoints: const [
-              ResponsiveBreakpoint.resize(450, name: MOBILE),
-              ResponsiveBreakpoint.autoScale(800, name: TABLET),
-              ResponsiveBreakpoint.autoScale(1000, name: DESKTOP),
-              ResponsiveBreakpoint.autoScale(1200, name: DESKTOP),
+            breakpoints: [
+              ResponsiveBreakpoint.autoScale(
+                450,
+                name: MOBILE,
+                scaleFactor: scale,
+              ),
+              const ResponsiveBreakpoint.autoScale(800, name: TABLET),
+              const ResponsiveBreakpoint.autoScale(1000, name: DESKTOP),
+              const ResponsiveBreakpoint.autoScale(1200, name: DESKTOP),
             ],
             background: Container(
               color: Colors.transparent,

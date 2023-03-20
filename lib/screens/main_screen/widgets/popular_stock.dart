@@ -27,6 +27,8 @@ class PopularStock extends StatelessWidget {
                 style: AppTextStyle.f14W600RobotoBlackBoldText,
               ),
               SimplePopUpMenuButton(
+                backgroundColorHover: AppColors.primaryColor,
+                iconColorHover: AppColors.blue100,
                 backgroundColor: AppColors.primaryColor,
                 iconColor: AppColors.blue100,
                 icon: Icons.more_horiz,
@@ -62,8 +64,29 @@ class PopularStock extends StatelessWidget {
             percentage: '10% loss',
             amount: '100.00',
           ),
-          const SizedBox(
-            height: 10,
+          SizedBox(
+            width: 100,
+            child: TextButton(
+              onPressed: () {},
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'View All',
+                    style: AppTextStyle.f14W600RobotoBlackBoldText.copyWith(
+                      fontSize: 12,
+                      color: AppColors.blue,
+                    ),
+                  ),
+                  Icon(
+                    Icons.keyboard_arrow_right,
+                    color: AppColors.blue,
+                    size: 20,
+                  )
+                ],
+              ),
+            ),
           )
         ],
       ),

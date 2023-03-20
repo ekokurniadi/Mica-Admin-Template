@@ -95,7 +95,8 @@ class _DashboardBarChartState extends State<DashboardBarChart> {
               ),
             ],
           ),
-          const BarChartSample4()
+          const SizedBox(height: defaultPadding + 2),
+          const BarChartSample4(),
         ],
       ),
     );

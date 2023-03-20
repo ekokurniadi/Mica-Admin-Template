@@ -7,7 +7,7 @@ class DividerSeparator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Divider(
-      color: AppColors.grayColor,
+      color: AppColors.dividerColor,
     );
   }
 }

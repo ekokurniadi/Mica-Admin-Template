@@ -7,6 +7,7 @@ import 'package:mica/components/button/profile_button.dart';
 import 'package:mica/components/button/simple_button.dart';
 import 'package:mica/components/layouts/sidebar.dart';
 import 'package:mica/components/search/search_field.dart';
+import 'package:mica/screens/main_screen/widgets/notification_widget.dart';
 import 'package:provider/provider.dart';
 
 class Header extends StatefulWidget {
@@ -34,6 +35,7 @@ class _HeaderState extends State<Header> {
               padding: const EdgeInsets.all(10),
               child: Row(
                 children: [
+                  const SizedBox(width: 8),
                   const SearchField(),
                   IconButton(
                     onPressed: () {
@@ -62,6 +64,8 @@ class _HeaderState extends State<Header> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: defaultPadding),
                       child: SimpleButton(
+                        backgroundColorHover: AppColors.purple,
+                        iconColorHover: AppColors.primaryColor,
                         backgroundColor: AppColors.purple100,
                         icon: Icons.menu,
                         iconColor: AppColors.purple,
@@ -78,6 +82,8 @@ class _HeaderState extends State<Header> {
                             !Responsive.isDesktop(context) ? 8 : defaultPadding,
                       ),
                       child: SimpleButton(
+                        backgroundColorHover: AppColors.purple,
+                        iconColorHover: AppColors.primaryColor,
                         backgroundColor: AppColors.purple100,
                         icon: Icons.search,
                         iconColor: AppColors.purple,
@@ -96,6 +102,8 @@ class _HeaderState extends State<Header> {
                             ? 8
                             : defaultPadding),
                     child: SimplePopUpMenuButton<int>(
+                      backgroundColorHover: AppColors.purple,
+                      iconColorHover: AppColors.primaryColor,
                       offset: const Offset(0, 10),
                       svgIcon: 'assets/images/svg/ic_quick_action.svg',
                       toolTip: '',
@@ -116,6 +124,8 @@ class _HeaderState extends State<Header> {
                           !Responsive.isDesktop(context) ? 8 : defaultPadding,
                     ),
                     child: SimpleButton(
+                      backgroundColorHover: AppColors.blue,
+                      iconColorHover: AppColors.primaryColor,
                       backgroundColor: AppColors.blue25,
                       svgIcon: 'assets/images/svg/ic_language.svg',
                       iconColor: AppColors.blue,
@@ -124,42 +134,27 @@ class _HeaderState extends State<Header> {
                       },
                     ),
                   ),
-                  // Padding(
-                  //   padding: EdgeInsets.only(
-                  //     right:
-                  //         !Responsive.isDesktop(context) ? 8 : defaultPadding,
-                  //   ),
-                  //   child: SimplePopUpMenuButton<int>(
-                  //     offset: const Offset(0, 10),
-                  //     svgIcon: 'assets/images/svg/ic_language.svg',
-                  //     toolTip: '',
-                  //     backgroundColor: AppColors.blue25,
-                  //     iconColor: AppColors.purple,
-                  //     onSelected: (value) {},
-                  //     children: const [
-                  //       PopupMenuItem(
-                  //         value: 0,
-                  //         child: Text("Settings"),
-                  //       ),
-                  //     ],
-                  //   ),
-                  // ),
                   Padding(
                     padding: EdgeInsets.only(
                       right:
                           !Responsive.isDesktop(context) ? 8 : defaultPadding,
                     ),
                     child: SimplePopUpMenuButton<int>(
-                      offset: const Offset(0, 10),
+                      backgroundColorHover: AppColors.purple,
+                      iconColorHover: AppColors.primaryColor,
+                      offset: const Offset(1, 10),
                       svgIcon: 'assets/images/svg/ic_notification.svg',
                       toolTip: '',
                       backgroundColor: AppColors.purple100,
                       iconColor: AppColors.purple,
                       onSelected: (value) {},
+                      isHaveDot: true,
                       children: const [
                         PopupMenuItem(
+                          enabled: false,
+                          padding: EdgeInsets.symmetric(horizontal: 8),
                           value: 0,
-                          child: Text("Settings"),
+                          child: NotificationWidget(),
                         ),
                       ],
                     ),

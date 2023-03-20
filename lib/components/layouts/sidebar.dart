@@ -30,7 +30,7 @@ class SideBar extends StatelessWidget {
             ),
             Text(
               'Dashboard',
-              style: AppTextStyle.f14W700BlackBold.copyWith(fontSize: 13),
+              style: AppTextStyle.f14W700BlackBold,
             ),
             const SizedBox(
               height: 14,
@@ -55,7 +55,7 @@ class SideBar extends StatelessWidget {
             ),
             Text(
               'Widget',
-              style: AppTextStyle.f14W700BlackBold.copyWith(fontSize: 13),
+              style: AppTextStyle.f14W700BlackBold,
             ),
             const SizedBox(
               height: 14,
@@ -87,7 +87,7 @@ class SideBar extends StatelessWidget {
             ),
             Text(
               'Application',
-              style: AppTextStyle.f14W700BlackBold.copyWith(fontSize: 13),
+              style: AppTextStyle.f14W700BlackBold,
             ),
             const SizedBox(
               height: 14,
@@ -158,8 +158,8 @@ class DrawerListItem extends StatelessWidget {
             Text(
               title,
               style: selected
-                  ? AppTextStyle.f14W700Purple.copyWith(fontSize: 13)
-                  : AppTextStyle.f14W400BlackText.copyWith(fontSize: 13),
+                  ? AppTextStyle.f14W700Purple
+                  : AppTextStyle.f14W400BlackText,
             )
           ],
         ),
@@ -211,8 +211,8 @@ class DrawerListItemExpandable extends StatelessWidget {
                   Text(
                     title,
                     style: isExpand.value
-                        ? AppTextStyle.f14W700Purple.copyWith(fontSize: 13)
-                        : AppTextStyle.f14W400BlackText.copyWith(fontSize: 13),
+                        ? AppTextStyle.f14W700Purple
+                        : AppTextStyle.f14W400BlackText,
                   )
                 ],
               ),
@@ -267,7 +267,7 @@ class ExpansionTileItemChildren extends StatelessWidget {
           ),
           Text(
             title,
-            style: AppTextStyle.f14W400BlackText.copyWith(fontSize: 13),
+            style: AppTextStyle.f14W400BlackText,
           ),
         ],
       ),

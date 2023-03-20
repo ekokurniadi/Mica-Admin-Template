@@ -29,8 +29,6 @@ class _TableProductState extends State<TableProduct> {
   List<Map<String, dynamic>> _sourceFiltered = [];
   List<Map<String, dynamic>> _source = [];
   List<Map<String, dynamic>> _selecteds = [];
-  // ignore: unused_field
-  final String _selectableKey = "id";
 
   String? _sortColumn;
   bool _sortAscending = true;

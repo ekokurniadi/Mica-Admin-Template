@@ -26,7 +26,7 @@ class MainScreen extends StatelessWidget {
               flex: 5,
               child: ListView(
                 shrinkWrap: true,
-                addAutomaticKeepAlives: false,
+                primary: true,
                 children: const [
                   Header(),
                   Padding(

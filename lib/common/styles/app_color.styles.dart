@@ -38,4 +38,6 @@ class AppColors {
 
   static Color textColorBlack = const Color(0xFF121926);
   static Color borderColor = const Color.fromRGBO(54, 65, 82, 100);
+
+  static Color dividerColor = const Color(0xFFe3e8ef);
 }

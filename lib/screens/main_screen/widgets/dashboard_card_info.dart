@@ -88,12 +88,16 @@ class _MobileCardState extends State<MobileCard> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           SimpleButton(
+                            backgroundColorHover: AppColors.purple300,
+                            iconColorHover: AppColors.primaryColor,
                             backgroundColor: AppColors.purple400,
                             iconColor: AppColors.primaryColor,
                             onPress: () {},
                             svgIcon: 'assets/images/svg/ic_earning.svg',
                           ),
                           SimplePopUpMenuButton<int>(
+                            backgroundColorHover: AppColors.purple,
+                            iconColorHover: AppColors.primaryColor,
                             icon: Icons.more_horiz,
                             toolTip: '',
                             backgroundColor: AppColors.purple300,
@@ -205,6 +209,8 @@ class _MobileCardState extends State<MobileCard> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           SimpleButton(
+                            backgroundColorHover: AppColors.blue200,
+                            iconColorHover: AppColors.primaryColor,
                             backgroundColor: AppColors.blue200,
                             iconColor: AppColors.primaryColor,
                             onPress: () {},
@@ -366,6 +372,8 @@ class _MobileCardState extends State<MobileCard> {
                         children: [
                           const SizedBox(width: defaultPadding),
                           SimpleButton(
+                            backgroundColorHover: AppColors.blue200,
+                            iconColorHover: AppColors.primaryColor,
                             backgroundColor: AppColors.blue200,
                             iconColor: AppColors.primaryColor,
                             onPress: () {},
@@ -440,6 +448,8 @@ class _MobileCardState extends State<MobileCard> {
                         children: [
                           const SizedBox(width: defaultPadding),
                           SimpleButton(
+                            backgroundColorHover: AppColors.yellow,
+                            iconColorHover: AppColors.primaryColor,
                             backgroundColor: AppColors.yellow,
                             iconColor: AppColors.primaryColor,
                             onPress: () {},
@@ -538,12 +548,16 @@ class _DesktopCardState extends State<DesktopCard> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             SimpleButton(
+                              backgroundColorHover: AppColors.purple400,
+                              iconColorHover: AppColors.primaryColor,
                               backgroundColor: AppColors.purple400,
                               iconColor: AppColors.primaryColor,
                               onPress: () {},
                               svgIcon: 'assets/images/svg/ic_earning.svg',
                             ),
                             SimplePopUpMenuButton<int>(
+                              backgroundColorHover: AppColors.purple300,
+                              iconColorHover: AppColors.primaryColor,
                               icon: Icons.more_horiz,
                               toolTip: '',
                               backgroundColor: AppColors.purple300,
@@ -658,6 +672,8 @@ class _DesktopCardState extends State<DesktopCard> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             SimpleButton(
+                              backgroundColorHover: AppColors.blue200,
+                              iconColorHover: AppColors.primaryColor,
                               backgroundColor: AppColors.blue200,
                               iconColor: AppColors.primaryColor,
                               onPress: () {},
@@ -821,6 +837,8 @@ class _DesktopCardState extends State<DesktopCard> {
                           children: [
                             const SizedBox(width: defaultPadding),
                             SimpleButton(
+                              backgroundColorHover: AppColors.blue200,
+                              iconColorHover: AppColors.primaryColor,
                               backgroundColor: AppColors.blue200,
                               iconColor: AppColors.primaryColor,
                               onPress: () {},
@@ -895,6 +913,8 @@ class _DesktopCardState extends State<DesktopCard> {
                           children: [
                             const SizedBox(width: defaultPadding),
                             SimpleButton(
+                              backgroundColorHover: AppColors.yellow,
+                              iconColorHover: AppColors.primaryColor,
                               backgroundColor: AppColors.yellow,
                               iconColor: AppColors.primaryColor,
                               onPress: () {},
