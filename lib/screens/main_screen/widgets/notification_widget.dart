@@ -109,11 +109,14 @@ class NotificationWidget extends StatelessWidget {
                   ),
                 ),
                 const DividerSeparator(),
-                const NotificationListItem(),
-                const NotificationListItem(),
-                const NotificationListItem(),
-                const NotificationListItem(),
-                const NotificationListItem(),
+                Column(
+                  children: List.generate(
+                    5,
+                    (i) => NotificationListItem(
+                      onTap: () {},
+                    ),
+                  ).toList(),
+                ),
               ],
             ),
           ),

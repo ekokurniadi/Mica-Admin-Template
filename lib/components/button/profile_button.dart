@@ -13,6 +13,7 @@ class ProfileButton extends StatelessWidget {
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           CircleAvatar(
             backgroundColor: Colors.transparent,
